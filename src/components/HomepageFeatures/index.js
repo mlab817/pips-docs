@@ -5,31 +5,30 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/undraw_agree_re_hor9.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        PIPS was designed from the ground up to be easily
+        used to get the PIP/TRIP updating up and running quickly.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Collaborative',
+    Svg: require('@site/static/img/undraw_engineering_team_a7n2.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        PIPS lets users collaborate through the Consolidation Module.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Report Generation',
+    Svg: require('@site/static/img/undraw_visualization_re_1kag.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        PIPS allows users to see a snapshot of their data submission.
+        It also allows downloading records for more details.
       </>
     ),
   },

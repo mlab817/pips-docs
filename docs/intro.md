@@ -35,7 +35,11 @@ updating. Major enhancements in the System include the following:
 1. DA operating units, including central office units, project management offices,
 regional field offices, bureaus, attached agencies, government-owned and controlled corporations (GOCCs), 
 encode PAPs for inclusion in the PIP and/or TRIP through the System (Encoder). Offices may request additional 
-accounts for lower-level offices (e.g. regional coordinators).
+accounts for lower-level offices (e.g. regional coordinators). There are two types of encoders:
+
+- Program Encoder - lower level units consisting of regional field offices, particularly regional coordinators, and bureaus 
+submit their inputs to banner programs as well as other programs for consolidation through the Consolidation Module.
+- PIP Encoder - PIP focals submit their programs and projects to the PIP/TRIP/CIP module.
 
 2. The Investment Programming Division (IPD), as DA-PIP Secretariat, validates operating units' submission (Validators).
 
