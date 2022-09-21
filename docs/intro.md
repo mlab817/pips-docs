@@ -28,7 +28,7 @@ updating. Major enhancements in the System include the following:
 3. Automated checks for data completion and consistency for project profile, activity logging, comment section, and PIPOL entry form,
 4. Enhanced data visualization in dashboard,
 5. Dedicated tracker page for project submissions by staff assigned and by office, and
-6. Mobile version.
+6. Mobile version (coming later).
 
 ## General Process Flow, User Administration and Management
 
@@ -37,9 +37,9 @@ regional field offices, bureaus, attached agencies, government-owned and control
 encode PAPs for inclusion in the PIP and/or TRIP through the System (Encoder). Offices may request additional 
 accounts for lower-level offices (e.g. regional coordinators). There are two types of encoders:
 
-- Program Encoder - lower level units consisting of regional field offices, particularly regional coordinators, and bureaus 
-submit their inputs to banner programs as well as other programs for consolidation through the Consolidation Module.
-- PIP Encoder - PIP focals submit their programs and projects to the PIP/TRIP/CIP module.
+   - Program Encoder - lower level units consisting of regional field offices, particularly regional coordinators, and bureaus 
+   submit their inputs to banner programs as well as other programs for consolidation through the Consolidation Module.
+   - PIP Encoder - PIP focals submit their programs and projects to the PIP/TRIP/CIP module.
 
 2. The Investment Programming Division (IPD), as DA-PIP Secretariat, validates operating units' submission (Validators).
 
