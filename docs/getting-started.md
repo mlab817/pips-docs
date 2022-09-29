@@ -26,7 +26,7 @@ https://da-pips.com
 3. The login page will appear as shown in the figure below. Enter your username and password
    as designated PIP Focal, and click the Login button.
 
-![login page](./screenshots/login.png)
+![login page](./screenshots/login.jpeg)
 
 :::warning
 After multiple failed attempts to log-in to the System, the user will be temporarily
