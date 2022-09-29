@@ -4,6 +4,14 @@ sidebar_position: 1
 
 # Introduction
 
+> Public investment programming is the task of formulating the broad, aggregate
+portfolio of public investments, where the portfolio is composed of goods and
+services necessary for government to perform its functions of promoting efficiency,
+equity, stability and representation in the international community in support of
+optimal rural and agricultural growth.[^1]
+
+[^1]: Guidebook on Market-Oriented Public Investment Programming by Rosemarie G. Edillon
+
 ## About the System
 
 The Public Investment Program (PIP) System is an online database system that
