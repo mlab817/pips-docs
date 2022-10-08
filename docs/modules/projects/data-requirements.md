@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Data Requirements
+# Encoding
 
 ## General Information
 

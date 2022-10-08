@@ -3,7 +3,11 @@ sidebar_position: 2
 description: The Program module is used to consolidate submissions from implementing units.
 ---
 
-# Consolidation
+# Consolidation [deprecated]
+
+:::danger
+This module has been dropped due to changes in the guidelines for the PIP/TRIP formulation.
+:::
 
 The Consolidation module provides a means for banner program and other regular program consolidators to facilitate data submission from
 the different implementing units of the program.

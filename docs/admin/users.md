@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Managing Users
+# Users
 
 :::warning
 This is an admin only feature. If you wish to update information regarding your profile that is NOT available
