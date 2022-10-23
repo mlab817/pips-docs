@@ -26,6 +26,19 @@ https://da-pips.com
 
 ![login page](./screenshots/login.jpeg)
 
+<iframe src="https://stackblitz.com/edit/react-ts-j5ad2y?embed=1&file=App.tsx&hideDevTools=1&hideExplorer=1&hideNavigation=1&view=preview"
+style={{
+   width: '100%',
+   height: 500,
+   border: 0, 
+   borderRadius: 4,
+   overflow: 'hidden'
+}}
+title="friendly-frog-w6yppy"
+allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+/>
+
 :::warning
 After multiple failed attempts to log-in to the System, the user will be temporarily
 locked out from logging in for security purposes. The user may use the "Forgot Password?" feature
