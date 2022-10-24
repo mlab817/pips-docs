@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/pips-docs.iml" filepath="$PROJECT_DIR$/.idea/pips-docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pips-react/.idea/pips-react.iml" filepath="$PROJECT_DIR$/../pips-react/.idea/pips-react.iml" />
     </modules>
   </component>
 </project>
