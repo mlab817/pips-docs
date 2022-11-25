@@ -4,8 +4,8 @@
   <ShortName>Public Investment Program System</ShortName>
   <Description>Search Public Investment Program System</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://pips-docs.web.app/img/logo_transparent.png</Image>
-  <Url type="text/html" method="get" template="https://pips-docs.web.app/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://pips-docs.web.app/opensearch.xml" />
-  <moz:SearchForm>https://pips-docs.web.app/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://manual.pips.da.gov.ph/img/logo_transparent.png</Image>
+  <Url type="text/html" method="get" template="https://manual.pips.da.gov.ph/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://manual.pips.da.gov.ph/opensearch.xml" />
+  <moz:SearchForm>https://manual.pips.da.gov.ph/</moz:SearchForm>
 </OpenSearchDescription>
