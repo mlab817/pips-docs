@@ -17,9 +17,11 @@ export const LoginForm = () => {
         <Row justify='center' style={{
             marginBottom: 16
         }}>
-            <Col span={12}>
+            <Col style={{
+                maxWidth: 360
+            }}>
                 <Card style={{
-                    textAlign: 'center'
+                    textAlign: 'center',
                 }}>
                     <div style={{
                         flex: 1,

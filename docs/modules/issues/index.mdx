@@ -1,0 +1,19 @@
+import {Button, Card} from "antd"; import ProjectIssues from "./issues";
+
+# Issues
+
+Upon saving any changes in the PAP profile, the system automatically validates the inputs of the user and generates
+a list of issues/observations. This can serve as a guide for the encoder and the reviewer in reviewing their inputs.
+
+<ProjectIssues />
+
+:::tip
+While it makes sense to aim for ZERO issues in the submission, this may NOT be achievable as some issues may not be
+resolved at the encoder level. For example, the system may detect duplicate PAP against another office's PAP which
+is not accessible to the encoder. This should be left up to the reviewer to resolve.
+
+Likewise, some information may be correct but the system detects it as an inconsistency maybe due to unavailability of
+the data at the time of encoding. In this case, the encoder should at least be prepared to explain the situation to the
+reviewer. For example, inconsistency between breakdown by funding source and list of fund sources (e.g. breakdown by
+fund source may not be available at this time).
+:::

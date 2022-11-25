@@ -1,0 +1,54 @@
+---
+sidebar_position: 1
+---
+
+import {Button, Card, Divider, Dropdown, Input, Menu, PageHeader, Segmented, Space, Table, Tooltip} from "antd";
+import {
+    DownloadOutlined,
+    ExpandOutlined, FolderOutlined,
+    InfoCircleOutlined, LockFilled, LockOutlined, PlusCircleOutlined,
+    ReloadOutlined,
+    VerticalAlignMiddleOutlined
+} from "@ant-design/icons"; import ProjectList from "./index";
+
+# PIP/TRIP
+
+The Project module is used to facilitate submission of programs and projects to PIP.
+
+## Page Controls
+
+<Card size='small' style={{
+    marginTop: 16,
+    marginBottom: 16
+}}>
+    <PageHeader style={{
+        border: '1px solid #000',
+        marginBottom: 16
+    }} title={<Tooltip title='Page Title'><FolderOutlined /> PIP/TRIP</Tooltip>} extra={
+        <Space>
+            <Input.Search />
+            <Dropdown.Button  overlay={<Menu items={[
+                {value: 1, label:'Office'},
+                {value: 2, label: 'Title'}
+            ]} />}>Sort</Dropdown.Button>
+            <Button icon={<PlusCircleOutlined />} type='primary'>New</Button>
+            <Button icon={<DownloadOutlined />} />
+            <Button icon={<ReloadOutlined />} />
+            <Segmented defaultValue='1' options={[{
+                value: '1',
+                icon: <VerticalAlignMiddleOutlined />
+            },{
+                value: '2',
+                icon: <ExpandOutlined />
+            }]} />
+            <Button icon={<InfoCircleOutlined />} type='text' />
+        </Space>}
+    />
+    <Card.Meta title={<Divider orientation='left'>Controls of PIP/TRIP page</Divider>} description='Hover over elements to learn more.' />
+</Card>
+
+## PIP/TRIP Table
+
+The list of programs and projects for inclusion to PIP, TRIP and CIP as shown in the table below.
+
+<ProjectList />

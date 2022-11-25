@@ -6,11 +6,14 @@ sidebar_position: 2
 
 ## General Features
 
-The PIP System is currently hosted by web hosting provider (Z.com) which uses cPanel. The backend system was built using 
-[PHP-Laravel](https://laravel.com) as a REST API provider. The frontend was built using [React](https://reactjs.org) and
-[Ant Design](https://ant.design). The mobile application was built using [ReactNative](https://reactnative.dev).
+The PIP System is currently hosted by the Department of Agriculture Information and Communications Technology Service (ICTS)
+using virtual machine with CentOS installed. 
 
-The system can be run in any browser that supports javascript. For best results, however, please use Google Chrome or 
+The backend system was built using [PHP-Laravel](https://laravel.com) as a REST API provider. The frontend was built using 
+[React](https://reactjs.org) and [Ant Design](https://ant.design). The mobile application was built using 
+[ReactNative](https://reactnative.dev).
+
+The system can be run in any browser that supports javascript. For optimal results, however, please use Google Chrome or 
 other Chrome-based browsers, e.g. Microsoft Edge, Brave, etc.
 
 The frontend application of the PIPS is a single page application. In traditional multi-page applications, each request to 

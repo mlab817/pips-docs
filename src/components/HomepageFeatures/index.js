@@ -4,31 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_agree_re_hor9.svg').default,
-    description: (
-      <>
-        PIPS was designed from the ground up to be easily
-        used to get the PIP/TRIP updating up and running quickly.
-      </>
-    ),
-  },
-  {
-    title: 'Collaborative',
+    title: 'Online',
     Svg: require('@site/static/img/undraw_engineering_team_a7n2.svg').default,
     description: (
       <>
-        PIPS lets users collaborate through the Consolidation Module.
+        This documentation is available anytime and anywhere as long as your connected to the internet.
       </>
     ),
   },
+{
+    title: 'Searchable',
+    Svg: require('@site/static/img/undraw_agree_re_hor9.svg').default,
+    description: (
+        <>
+            Easily find what the information you are looking form with the search bar!
+        </>
+    ),
+},
   {
-    title: 'Report Generation',
+    title: 'Interactive Documentation',
     Svg: require('@site/static/img/undraw_visualization_re_1kag.svg').default,
     description: (
       <>
-        PIPS allows users to see a snapshot of their data submission.
-        It also allows downloading records for more details.
+        This documentation allows users to experience usage of the System with interactive elements.
       </>
     ),
   },

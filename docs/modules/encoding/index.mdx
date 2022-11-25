@@ -1,0 +1,1246 @@
+import {DeleteOutlined, MinusCircleOutlined, PlusCircleOutlined} from "@ant-design/icons";
+import {
+    Button,
+    Card,
+    DatePicker,
+    Form,
+    Input,
+    InputNumber,
+    PageHeader, Radio,
+    Select,
+    Space,
+    Switch,
+    Table,
+    TreeSelect
+} from 'antd';
+import ProjectTitle from "./components/project-title";
+import Type from "./components/type";
+
+import './style.css'; import RegularProgram from "./components/regular-program"; import ImplementationBasis
+    from "./components/implementation-basis"; import Description from "./components/description"; import TotalCost
+    from "./components/total-cost"; import SpatialCoverage from "./components/spatial-coverage"; import Locations
+    from "./components/locations"; import ApprovalLevel from "./components/approval-level"; import ApprovalDate
+    from "./components/approval-date"; import Pip from "./components/pip"; import Typology from "./components/typology"; import Trip
+    from "./components/trip"; import Cip from "./components/cip"; import CipType from "./components/cip-type"; import Gad
+    from "./components/gad"; import Rdip from "./components/rdip"; import RdcEndorsement
+    from "./components/rdc-endorsement"; import RdcEndorsementDate from "./components/rdc-endorsement-date"; import Research
+    from "./components/research"; import Ict from "./components/ict"; import Covid from "./components/covid"; import PdpChapter
+    from "./components/pdp-chapter"; import PdpChapters from "./components/pdp-chapters"; import InfrastructureSectors
+    from "./components/infrastructure-sectors"; import Prerequisites from "./components/prerequisites"; import ImplementationRisk
+    from "./components/implementation-risk"; import CostBreakdown
+    from "./components/cost-breakdown"; import InfraCost from "./components/infra-cost"; import ExpectedOutputs
+    from "./components/expected-outputs"; import Agenda from "./components/agenda";
+
+# Encoding
+
+The top of the page provides controls for resetting and saving the form.
+
+<Card size='small'>
+    <PageHeader title='Add PIP/TRIP' extra={
+        <Space>
+            <Button danger>Reset</Button>
+            <Button type='primary'>Save</Button>
+        </Space>
+    } />
+</Card>
+
+## General Information
+
+<ProjectTitle />
+
+<Type />
+
+<RegularProgram />
+
+<ImplementationBasis />
+
+<Description />
+
+<TotalCost />
+
+## Spatial Coverage
+
+<SpatialCoverage />
+
+<Locations />
+
+## Level of Approval
+
+<ApprovalLevel />
+
+<ApprovalDate />
+
+## Project for Inclusion in Which Programming Document
+
+Select under which Programming Document the program/project is being
+submitted.
+
+<Pip />
+
+<Typology />
+
+<Trip />
+
+<Cip />
+
+<CipType />
+
+<Gad />
+
+<Rdip />
+
+<RdcEndorsement />
+
+<RdcEndorsementDate />
+
+<Research />
+
+<Ict />
+
+<Covid />
+
+## Philippine Development Plan (PDP) Chapter
+
+<PdpChapter />
+
+<PdpChapters />
+
+## TRIP Requirements
+
+Required fields if the PAP is for inclusion in TRIP.
+
+<InfrastructureSectors />
+
+<Prerequisites />
+
+<ImplementationRisk />
+
+## Infrastructure Cost per Funding Source (in absolute PhP)
+
+<InfraCost />
+
+:::tip
+A new row can be added by clicking the add button. Rows can be deleted by clicking on the (-) button.
+:::
+
+## Expected Outputs/Deliverables
+
+<ExpectedOutputs />
+
+## Socioeconomic Agenda
+
+<Agenda />
+
+## Sustainable Development Goals (SDG)
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Sustainable Development Goals'>
+        <Select mode='multiple' options={[
+            {
+                "value": 1,
+                "label": "Goal 1: No Poverty"
+            },
+            {
+                "value": 2,
+                "label": "Goal 2: Zero Hunger"
+            },
+            {
+                "value": 3,
+                "label": "Goal 3: Good Health and Well-Being"
+            },
+            {
+                "value": 4,
+                "label": "Goal 4: Quality Education"
+            },
+            {
+                "value": 5,
+                "label": "Goal 5: Gender Equality"
+            },
+            {
+                "value": 6,
+                "label": "Goal 6: Clean Water and Sanitation"
+            },
+            {
+                "value": 7,
+                "label": "Goal 7: Affordable and Clean Energy"
+            },
+            {
+                "value": 8,
+                "label": "Goal 8: Decent Work and Economic Growth"
+            },
+            {
+                "value": 9,
+                "label": "Goal 9: Industy, Innovation and Infrastructure"
+            },
+            {
+                "value": 10,
+                "label": "Goal 10: Reduced Inequalities"
+            },
+            {
+                "value": 11,
+                "label": "Goal 11: Sustainable Cities and Communities"
+            },
+            {
+                "value": 12,
+                "label": "Goal 12: Responsible Consumption and Production"
+            },
+            {
+                "value": 13,
+                "label": "Goal 13: Climate Action"
+            },
+            {
+                "value": 14,
+                "label": "Goal 14: Life Below Water"
+            },
+            {
+                "value": 15,
+                "label": "Goal 15: Life on Land"
+            },
+            {
+                "value": 16,
+                "label": "Goal 16: Peace, Justice and Strong Institutions"
+            },
+            {
+                "value": 17,
+                "label": "Goal 17: Partnerships for the Goals"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+27. **Sustainable Development Goals** - Select which of the Sustainable Development Goals (SDGs) the program/project is
+    expected to contribute. User can select more than one (1) SDG, if applicable.
+
+## Project Preparation Details
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Project Preparation Document'>
+        <Select options={[
+            {
+                "value": 1,
+                "label": "Feasibility Study"
+            },
+            {
+                "value": 2,
+                "label": "Business Case"
+            },
+            {
+                "value": 3,
+                "label": "Project Proposal"
+            },
+            {
+                "value": 4,
+                "label": "Concept Note"
+            },
+            {
+                "value": 5,
+                "label": "Others"
+            },
+            {
+                "value": 99,
+                "label": "Not Applicable"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+28. **Project Preparation Document** - Identify the appropriate Project Preparation Document for the program/project from the following:
+    - Feasibility Study (F/S);
+    - Business Case;
+    - Project Proposal;
+    - Concept Note; and
+    - Others.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Will require assistance for the conduct of F/S (from NEDA)?'>
+        <Switch />
+    </Form.Item>
+</Card>
+
+29. **Will require assistance for the conduct of F/S (from NEDA)?** - Tick the checkbox if the feasibility study will require assistance from NEDA.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Status of FS' rules={[{required:true}]}>
+        <Select options={[
+            {
+                "value": 1,
+                "label": "Ongoing"
+            },
+            {
+                "value": 2,
+                "label": "Completed"
+            },
+            {
+                "value": 3,
+                "label": "For Preparation"
+            },
+            {
+                "value": 99,
+                "label": "Not Applicable"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+30. **Status of FS**. Select the Status of the Feasibility Study from the following:
+    - Completed;
+    - Ongoing (specify the expected completion date); and
+    - For Preparation (specify the target start date and if applicable, click the tick
+        box to indicate that the program/project will require assistance for the
+        conduct of Feasibility Study).
+
+    > Skip if the PAP does not require FS.
+
+<Card style={{
+    margin: 16
+}}>
+<Form.Item label='Total Cost of F/S (in absolute PhP terms)'>
+    <InputNumber controls={false} style={{
+        width: '100%'
+    }} />
+</Form.Item>
+</Card>
+
+31. **Total Cost of FS** - Provide the total F/S cost in exact amount in PHP.
+
+## Employment Generation
+
+<Card style={{
+    margin: 16
+}}>
+<Form.Item label='Total Employment Generated'>
+    <InputNumber controls={false} />
+</Form.Item>
+
+<Form.Item label='Total no. of males employed'>
+    <InputNumber controls={false} />
+</Form.Item>
+
+<Form.Item label='Total no. of females employed'>
+    <InputNumber controls={false} />
+</Form.Item>
+</Card>
+
+32. **Employment Generated** - Provide the estimated number of persons to be employed by the program/project in the
+    text box field for Employment Generation. Indicate the number of persons to be
+    employed by the project outside the implementing agency.
+
+
+## Funding Source and Mode of Implementation
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Main Funding Source' rules={[{required:true}]}>
+        <Select options={[
+            {
+                "value": 1,
+                "label": "NG-Local"
+            },
+            {
+                "value": 2,
+                "label": "NG-ODA Loan"
+            },
+            {
+                "value": 3,
+                "label": "NG-ODA Grant"
+            },
+            {
+                "value": 4,
+                "label": "GOCC/GFI"
+            },
+            {
+                "value": 5,
+                "label": "Private Sector"
+            },
+            {
+                "value": 6,
+                "label": "Others"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+33. **Main Funding Source**. Select the main funding source for the PAP.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Other Funding Sources' rules={[{required:true}]} extra='Select as many as applicable'>
+        <Select mode='multiple' options={[
+            {
+                "value": 1,
+                "label": "NG-Local"
+            },
+            {
+                "value": 2,
+                "label": "NG-ODA Loan"
+            },
+            {
+                "value": 3,
+                "label": "NG-ODA Grant"
+            },
+            {
+                "value": 4,
+                "label": "GOCC/GFI"
+            },
+            {
+                "value": 5,
+                "label": "Private Sector"
+            },
+            {
+                "value": 6,
+                "label": "Others"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+35. **Other Funding Sources** - For the Main Funding Source, select all the applicable Funding Source options of
+    the program/project from the list. Select as many as applicable.
+
+    - National Government (NG)-Local
+    - NG-ODA Loan;
+    - NG-ODA Grant;
+    - GOCC/GFIs;
+    - Private Sector; and/or
+    - Others
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='ODA Funding Institution' rules={[{required:true}]}  extra='Select as many as applicable'>
+        <Select mode='multiple' options={[
+            {
+                "value": 1,
+                "label": "Australia"
+            },
+            {
+                "value": 2,
+                "label": "Austria"
+            },
+            {
+                "value": 3,
+                "label": "China"
+            },
+            {
+                "value": 4,
+                "label": "Japan"
+            },
+            {
+                "value": 5,
+                "label": "Japan International Cooperation Agency"
+            },
+            {
+                "value": 6,
+                "label": "Korea"
+            },
+            {
+                "value": 7,
+                "label": "Korea International Cooperation Agency"
+            },
+            {
+                "value": 8,
+                "label": "Korea Eximbank Resident Mission / Economic Development Cooperation Fund"
+            },
+            {
+                "value": 9,
+                "label": "New Zealand"
+            },
+            {
+                "value": 10,
+                "label": "Saudi Arabia"
+            },
+            {
+                "value": 11,
+                "label": "Saudi Fund for Development"
+            },
+            {
+                "value": 12,
+                "label": "Belgium"
+            },
+            {
+                "value": 13,
+                "label": "Canada"
+            },
+            {
+                "value": 14,
+                "label": "Denmark"
+            },
+            {
+                "value": 15,
+                "label": "European Union"
+            },
+            {
+                "value": 16,
+                "label": "European Investment Bank"
+            },
+            {
+                "value": 17,
+                "label": "France"
+            },
+            {
+                "value": 18,
+                "label": "French Development Agency Philippine"
+            },
+            {
+                "value": 19,
+                "label": "Germany"
+            },
+            {
+                "value": 20,
+                "label": "Germany Agency for International Cooperation"
+            },
+            {
+                "value": 21,
+                "label": "German Development Bank"
+            },
+            {
+                "value": 22,
+                "label": "Federal Ministry for Economic Cooperation and Development"
+            },
+            {
+                "value": 23,
+                "label": "Hungary"
+            },
+            {
+                "value": 24,
+                "label": "Italy"
+            },
+            {
+                "value": 25,
+                "label": "Netherlands"
+            },
+            {
+                "value": 26,
+                "label": "Norway"
+            },
+            {
+                "value": 27,
+                "label": "Nordic Investment Bank"
+            },
+            {
+                "value": 28,
+                "label": "Poland"
+            },
+            {
+                "value": 29,
+                "label": "Spain"
+            },
+            {
+                "value": 30,
+                "label": "Agencia Espanola de Cooperation International para el Desarollo"
+            },
+            {
+                "value": 31,
+                "label": "Sweden / Swedish International Development Cooperation Agency"
+            },
+            {
+                "value": 32,
+                "label": "Switzerland"
+            },
+            {
+                "value": 33,
+                "label": "United Kingdom"
+            },
+            {
+                "value": 34,
+                "label": "United States"
+            },
+            {
+                "value": 35,
+                "label": "United States Agency for International Development"
+            },
+            {
+                "value": 36,
+                "label": "Asian Development Bank"
+            },
+            {
+                "value": 37,
+                "label": "World Bank"
+            },
+            {
+                "value": 38,
+                "label": "United Nations Coordination Office"
+            },
+            {
+                "value": 39,
+                "label": "Food and Agriculture Organization"
+            },
+            {
+                "value": 40,
+                "label": "United Nations Development Programme"
+            },
+            {
+                "value": 41,
+                "label": "United Nations Industrial Development Organization"
+            },
+            {
+                "value": 42,
+                "label": "United Nations Population Fund"
+            },
+            {
+                "value": 43,
+                "label": "International Fund for Agricultural Development"
+            },
+            {
+                "value": 44,
+                "label": "International Labor Organization"
+            },
+            {
+                "value": 45,
+                "label": "United Nations Children's Fund"
+            },
+            {
+                "value": 46,
+                "label": "International Atomic Energy Agency"
+            },
+            {
+                "value": 47,
+                "label": "OPEC Fund for International Development"
+            },
+            {
+                "value": 48,
+                "label": "World Food Programme"
+            },
+            {
+                "value": 49,
+                "label": "World Health Organization"
+            },
+            {
+                "value": 50,
+                "label": "To be determined"
+            },
+            {
+                "value": 51,
+                "label": "Others"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+36. **ODA Funding Institution** - If the program/project is for Official Development
+    Assistance (ODA) loan or grant, select the applicable ODA funding institution from the dropdown field.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Mode of Implementation/Procurement' rules={[{required:true}]}>
+        <Select options={[
+            {
+                "value": 74,
+                "label": "Through Local Funds in accordance with RA 9184 or the Government Procurement Act"
+            },
+            {
+                "value": 75,
+                "label": "Through ODA pursuant to RA 8182 or the ODA Act of 1996"
+            },
+            {
+                "value": 76,
+                "label": "Through PPP under the Amended BOT Law and Its IRR"
+            },
+            {
+                "value": 77,
+                "label": "Through Joint Venture Arrangement"
+            },
+            {
+                "value": 78,
+                "label": "Others"
+            },
+            {
+                "value": 99,
+                "label": "Not Applicable"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+37. **Mode of Implementation/Procurement** - Select the applicable mode of implementation or procurement from the following:
+
+    - Republic Act (RA) No. 9184 or the Government Procurement Act;
+    - RA 8182 or the ODA Act of 1996 (Through Development Partner’s
+    Procurement Process);
+    - Amended Build-Operate-Transfer Law and its Implementing Rules and
+    Regulations;
+    - Joint Venture Agreement; or
+    - Others (Please input specific mode of implementation).
+
+## Physical and Financial Status
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Project Status' rules={[{required:true}]}>
+        <Select options={[
+            {
+                "value": 1,
+                "label": "Ongoing"
+            },
+            {
+                "value": 2,
+                "label": "Proposed"
+            },
+            {
+                "value": 3,
+                "label": "Completed"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+
+38. **Project Status** - For the Physical and Financial Status, indicate the Status of Project/Program
+    as either of the following:
+    
+    - Ongoing;
+    - Proposed; or 
+    - Completed.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Category' rules={[{required:true}]}>
+        <Select options={[
+            {
+                "value": 1,
+                "label": "Tier 1 (Ongoing)"
+            },
+            {
+                "value": 2,
+                "label": "Tier 2 (New)"
+            },
+            {
+                "value": 3,
+                "label": "Tier 2 (Expanded)"
+            },
+            {
+                "value": 99,
+                "label": "Not Applicable"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+
+39. **Category** - Under Category, click whether the program/project is Tier 1 or Tier 2. If the
+    program/project is categorized as Tier 1, provide the UACS Code in the text box field.
+    For Tier 2 (New and Expanded), indicate whether the program/project is New or
+    Expanded.
+
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='UACS Code' rules={[{required:true}]} extra='Select as many as applicable'>
+        <TreeSelect treeCheckable treeDefaultExpandAll treeData={[
+            {
+                "value": 19,
+                "label": "TECHNICAL AND SUPPORT SERVICES PROGRAM",
+                "children": [
+                    {
+                        "value": 20,
+                        "label": "PRODUCTION SUPPORT SERVICES (PSS) SUB-PROGRAM"
+                    },
+                    {
+                        "value": 29,
+                        "label": "MARKET DEVELOPMENT SERVICES (MDS) SUB-PROGRAM"
+                    },
+                    {
+                        "value": 38,
+                        "label": "EXTENSION SUPPORT, EDUCATION AND TRAINING SERVICES (ESETS) SUB-PROGRAM"
+                    },
+                    {
+                        "value": 52,
+                        "label": "RESEARCH AND DEVELOPMENT (R&D) SUB-PROGRAM"
+                    }
+                ]
+            },
+            {
+                "value": 62,
+                "label": "AGRICULTURAL MACHINERY, EQUIPMENT, FACILITIES AND INFRASTRUCTURES PROGRAM",
+                "children": [
+                    {
+                        "value": 63,
+                        "label": "AGRICULTURAL MACHINERY, EQUIPMENT, AND FACILITIES SUPPORT SERVICES SUB-PROGRAM"
+                    },
+                    {
+                        "value": 71,
+                        "label": "IRRIGATION NETWORK SERVICES (INS) SUB-PROGRAM"
+                    },
+                    {
+                        "value": 78,
+                        "label": "FARM-TO-MARKET ROADS (FMR) SUB-PROGRAM"
+                    }
+                ]
+            },
+            {
+                "value": 81,
+                "label": "AGRICULTURE AND FISHERY POLICY PROGRAM",
+                "children": [
+                    {
+                        "value": 82,
+                        "label": "Formulation, monitoring and evaluation of agricultural and fishery policies, plans and programs"
+                    }
+                ]
+            },
+            {
+                "value": 83,
+                "label": "AGRICULTURE AND FISHERY REGULATORY SUPPORT PROGRAM",
+                "children": [
+                    {
+                        "value": 84,
+                        "label": "Quality control and inspection"
+                    },
+                    {
+                        "value": 85,
+                        "label": "Agriculture and fishery product standards"
+                    },
+                    {
+                        "value": 86,
+                        "label": "Quarantine services"
+                    },
+                    {
+                        "value": 87,
+                        "label": "Registration and licensing"
+                    }
+                ]
+            },
+            {
+                "value": 88,
+                "label": "LOCALLY-FUNDED AND FOREIGN-ASSISTED PROGRAM",
+                "children": [
+                    {
+                        "value": 89,
+                        "label": "Project(s)"
+                    }
+                ]
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+40. **UACS Code** - Provide the PAP Code which refers to the 15-digit code within the UACS Code
+    that provides reference to the Sector/Horizontal Outcomes, Program/ Project, Major
+    Final Output/ Project Category, Activity Level 1/Sub-Category and Activity Level 2
+    / Project Title.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Start of Project Implementation' rules={[{required:true}]}>
+        <Select options={([2010,2011,2012,'...',2028,2029,2030].map(y => ({
+            label: y,
+            value: y
+        })))} />
+    </Form.Item>
+</Card>
+
+41. **Start of Project Implementation** - Provide the Implementation Period of the program/project by indicating the Start
+    of Project Implementation in the year dropdown fields provided. For PROGRAMS, select 2023 as start of implementation.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Year of Project Completion' rules={[{required:true}]}>
+        <Select options={([2010,2011,2012,'...',2028,2029,2030].map(y => ({
+            label: y,
+            value: y
+        })))} />
+    </Form.Item>
+</Card>
+
+42. **Year of Project Completion** - Provide the Implementation Period of the program/project by indicating the Year of Project Completion in the year dropdown fields provided.
+For PROGRAMS, select 2028 as end of implementation.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Level of Readiness' rules={[{required:true}]}>
+        <Select options={[
+            {
+                "value": 1,
+                "label": "Level 1: Approved but not yet ongoing"
+            },
+            {
+                "value": 2,
+                "label": "Level 2: For Approval"
+            },
+            {
+                "value": 3,
+                "label": "Level 3: Ongoing preparation of project document"
+            },
+            {
+                "value": 5,
+                "label": "Not Applicable"
+            }
+        ]} />
+    </Form.Item>
+</Card>
+
+43. **Level of Readiness** - If the project is yet to start, select the level of readiness.
+    
+:::info
+This field tends to be dynamic and moves relative to the current year. Follow NEDA guidelines in
+determining the level of readiness.
+:::
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item hasFeedback label='Updates' rules={[{required:true}]}>
+        <Input.TextArea autoSize={{ minRows: 3}} showCount maxLength={500} />
+    </Form.Item>
+</Card>
+
+44. **Updates** - Reflect detailed status of the program/project in the Physical and Financial Status
+    Updates text box provided. For proposed program/project, please indicate the
+    physical status of the program/project in terms of project preparation, approval,
+    funding, etc. If ongoing or completed, please provide information on the delivery of
+    outputs, percentage of completion and financial status/ accomplishment in terms of
+    utilization rate.
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='As of' rules={[{required:true}]}>
+        <DatePicker />
+    </Form.Item>
+</Card>
+
+45. **As of** (Updates) - Provide the reference date for the status provided in the As of date picker field
+
+## Investment Cost per Region (in absolute PhP)
+
+<Card style={{
+    margin: 16
+}}>
+    <Table
+        size='small'
+        tableLayout='auto' columns={[{
+        key: 'region_id',
+        dataIndex: 'region_id',
+        title: 'REGION',
+        render: val => <Select value={val} options={[
+            {
+                "value": 16,
+                "label": "NCR"
+            },
+            {
+                "value": 15,
+                "label": "CAR"
+            },
+            {
+                "value": 1,
+                "label": "Region I"
+            },
+            {
+                "value": 2,
+                "label": "Region II"
+            },
+            {
+                "value": 3,
+                "label": "Region III"
+            },
+            {
+                "value": 40,
+                "label": "Region IV-A"
+            },
+            {
+                "value": 41,
+                "label": "Region IV-B"
+            },
+            {
+                "value": 5,
+                "label": "Region V"
+            },
+            {
+                "value": 6,
+                "label": "Region VI"
+            },
+            {
+                "value": 7,
+                "label": "Region VII"
+            },
+            {
+                "value": 8,
+                "label": "Region VIII"
+            },
+            {
+                "value": 9,
+                "label": "Region IX"
+            },
+            {
+                "value": 10,
+                "label": "Region X"
+            },
+            {
+                "value": 11,
+                "label": "Region XI"
+            },
+            {
+                "value": 12,
+                "label": "Region XII"
+            },
+            {
+                "value": 13,
+                "label": "CARAGA"
+            },
+            {
+                "value": 14,
+                "label": "BARMM"
+            }
+        ]} />
+    }, {
+        key: 'y2022',
+        dataIndex: 'y2022',
+        title: '2022 & Prior',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2023',
+        dataIndex: 'y2023',
+        title: '2023',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2024',
+        dataIndex: 'y2024',
+        title: '2024',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2025',
+        dataIndex: 'y2025',
+        title: '2025',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2026',
+        dataIndex: 'y2026',
+        title: '2026',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2027',
+        dataIndex: 'y2027',
+        title: '2027',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2028',
+        dataIndex: 'y2028',
+        title: '2028',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2029',
+        dataIndex: 'y2029',
+        title: 'Continuing Years',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'Total',
+        dataIndex: 'total',
+        title: 'Total',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'delete',
+        dataIndex: 'delete',
+        title: <DeleteOutlined />,
+        render: () => <MinusCircleOutlined />
+    }]} dataSource={[{
+        region_id: 16,
+        y2022: 10000000
+    }]} pagination={false} />
+
+<Button icon={<PlusCircleOutlined />}>Add</Button>
+</Card>
+
+46. **Region** - Select the region from the dropdown field.
+
+47. **Annual Investment Cost** - Input the annual investment cost in absolute PhP terms.
+
+:::note
+A new row can be added by clicking the add button. Rows can be deleted by clicking on the (-) button.
+:::
+
+## Investment Cost per Funding Source (in absolute PhP)
+
+<Card style={{
+    margin: 16
+}}>
+    <Table columns={[{
+        key: 'funding_source_id',
+        dataIndex: 'funding_source_id',
+        title: 'FUNDING SOURCE',
+        render: val => <Select value={val} options={[
+            {
+                "value": 1,
+                "label": "NG-Local"
+            },
+            {
+                "value": 2,
+                "label": "NG-ODA Loan"
+            },
+            {
+                "value": 3,
+                "label": "NG-ODA Grant"
+            },
+            {
+                "value": 4,
+                "label": "GOCC/GFI"
+            },
+            {
+                "value": 5,
+                "label": "Private Sector"
+            },
+            {
+                "value": 6,
+                "label": "Others"
+            }
+        ]} />
+    }, {
+        key: 'y2022',
+        dataIndex: 'y2022',
+        title: '2022 & Prior',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2023',
+        dataIndex: 'y2023',
+        title: '2023',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2024',
+        dataIndex: 'y2024',
+        title: '2024',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2025',
+        dataIndex: 'y2025',
+        title: '2025',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2026',
+        dataIndex: 'y2026',
+        title: '2026',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2027',
+        dataIndex: 'y2027',
+        title: '2027',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2028',
+        dataIndex: 'y2028',
+        title: '2028',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'y2029',
+        dataIndex: 'y2029',
+        title: 'Continuing Years',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'Total',
+        dataIndex: 'total',
+        title: 'Total',
+        render: val => <InputNumber value={val} controls={false} />
+    },{
+        key: 'delete',
+        dataIndex: 'delete',
+        title: <DeleteOutlined />,
+        render: () => <MinusCircleOutlined />
+    }]} dataSource={[{
+        funding_source_id: 1,
+        y2022: 10000000
+    }]} pagination={false} />
+
+<Button icon={<PlusCircleOutlined />}>Add</Button>
+</Card>
+
+48. **Funding Source** - Select the funding source from the dropdown field.
+
+49. **Annual Investment Cost** - Input the annual investment cost in absolute Php terms.
+
+:::note
+A new row can be added by clicking the add button. Rows can be deleted by clicking on the (-) button.
+:::
+
+## Financial Accomplishments (in absolute PhP)
+
+For the table of financial accomplishments, provide the annual information on the
+Amount Included in the National Expenditure Program (NEP), Amount
+Allocated in the Budget/General Appropriations Act (GAA) and Actual Amount
+Disbursed by the agency for the program/project. The value to be indicated should
+be in exact amount in PHP. This field also has an auto-compute functionality.
+
+<Table
+    size='small'
+    style={{
+        width: '100%'
+    }}
+    columns={[{
+        title: 'Year',
+        dataIndex: 'year',
+        key: 'year'
+    },{
+        title: 'NEP',
+        dataIndex: 'nep',
+        key: 'nep',
+        align: 'right',
+        render: val => <InputNumber value={val} controls={false} bordered={false} />
+    },{
+        title: 'GAA',
+        dataIndex: 'gaa',
+        key: 'gaa',
+        align: 'right',
+        render: val => <InputNumber value={val} controls={false} bordered={false} />
+    },{
+        title: 'Disbursement',
+        dataIndex: 'disbursement',
+        key: 'disbursement',
+        align: 'right',
+        render: val => <InputNumber value={val} controls={false} bordered={false} />
+    }]}
+    dataSource={([2023,2024,2025,2026,2027,2028].map(y => ({
+        year: y,
+        nep: 10**6,
+        gaa: 10**6,
+        disbursement: 10**6,
+    })))}
+    pagination={false}
+/>
+
+:::info
+The fields for in the above table are disabled based on the projected availability of data. For example,
+it is expected that only the NEP and GAA figures will be available for the current year
+while the disbursement will only begin in the succeeding year.
+:::
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item hasFeedback label='Remarks' rules={[{required:true}]} initialValue='Remarks' name='remarks'>
+        <Input.TextArea autoSize={{ minRows: 3}} maxLength={500} showCount />
+    </Form.Item>
+</Card>
+
+:::info
+In the edit PIP/TRIP form, you can update the status of the PAP.
+:::
+
+<Card style={{
+    margin: 16
+}}>
+    <Form.Item label='Submission Status'>
+        <Radio.Group value={1} optionType='button' options={[{
+            value: 1,
+            label: 'Draft'
+        },{
+            value: 2,
+            label: 'Finalized'
+        },{
+            value: 3,
+            label: 'Dropped'
+        }]} />
+    </Form.Item>
+</Card>

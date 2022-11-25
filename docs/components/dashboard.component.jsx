@@ -1,8 +1,24 @@
-import React from 'react'
-import {Alert, Avatar, Card, Col, Layout, Menu, PageHeader, Row, Skeleton, Space, Statistic, Tooltip} from "antd";
+import React, {useState} from 'react'
+import {
+    Alert,
+    Avatar,
+    Badge,
+    Card,
+    Col,
+    Layout,
+    Menu,
+    PageHeader,
+    Row,
+    Skeleton,
+    Space,
+    Statistic,
+    Tooltip
+} from "antd";
 import {BellFilled, DashboardOutlined, MenuFoldOutlined, NotificationFilled} from "@ant-design/icons";
 
 const Dashboard = () => {
+    const [collapsed, setCollapsed] = useState(false)
+
     const menu = (
         <Menu theme='dark' items={[{
             label: 'Dashboard',
@@ -49,7 +65,7 @@ const Dashboard = () => {
             border: '1px solid lightgray',
             marginBottom: 16
         }}>
-            <Layout.Sider collapsible trigger={null}>
+            <Layout.Sider collapsible trigger={null} collapsed={collapsed} collapsedWidth={0}>
                 {menu}
             </Layout.Sider>
 
@@ -63,11 +79,17 @@ const Dashboard = () => {
                     <Row justify='space-between'>
                         <div>
                             <Tooltip title='Toggles sidebar show/hide'>
-                                <MenuFoldOutlined />
+                                <MenuFoldOutlined onClick={() => setCollapsed(!collapsed)} />
                             </Tooltip>
                         </div>
 
+                        <div>Deadline: {(new Date()).toLocaleString()}</div>
+
                         <Space justify='end'>
+                            <Tooltip title='Status of Encoding'>
+                                <Badge color='red' text='Closed' />
+                            </Tooltip>
+
                             <Tooltip title='Opens notification center'>
                                 <BellFilled />
                             </Tooltip>

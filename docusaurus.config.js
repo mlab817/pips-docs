@@ -89,8 +89,19 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: 'Community',
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Facebook Group',
+                href: 'https://www.facebook.com/groups/234374254369151'
+              },
+              {
+                label: 'Facebook Page',
+                href: 'https://facebook.com/dapmsipd'
+              }
+            ]
+          },
           //   items: [
           //     {
           //       label: 'Stack Overflow',
@@ -109,10 +120,10 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              // {
+              //   label: 'Blog',
+              //   to: '/blog',
+              // },
               {
                 label: 'GitHub',
                 href: 'https://github.com/mlab817/pips-docs',
@@ -120,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PIPS. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Mark Lester Bolotaolo.`,
       },
       prism: {
         theme: lightCodeTheme,
@@ -151,7 +162,8 @@ const config = {
       },
     }),
   stylesheets: [
-    'https://fonts.googleapis.com/icon?family=Material+Icons',
+    // 'https://fonts.googleapis.com/icon?family=Material+Icons',
+    'https://unpkg.com/antd@4.23.6/dist/antd.min.css'
   ]
 };
 

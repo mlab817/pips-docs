@@ -1,8 +1,8 @@
 {
-  "label": "Modules",
+  "label": "PIP/TRIP",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Modules of the PIP System"
+    "description": "Managing PAPs in the PIP System"
   }
 }
